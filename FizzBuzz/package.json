@@ -1,0 +1,15 @@
+{
+  "name": "tdd_js",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas unitarias con Jest",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+  },
+  "author": "Manuela Grajales Duque",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
