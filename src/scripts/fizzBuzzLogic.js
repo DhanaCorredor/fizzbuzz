@@ -1,9 +1,12 @@
 export const calculateFizzBuzz = (input) => {
     try {
+        if (typeof input === "string" && input.trim() === "") {
+            throw new Error("Por favor, introduce un número válido.");
+        }
+
         const number = Number(input);
 
-        // Validación: ¿Es un número válido?
-        if (isNaN(number) || input === "") {
+        if (isNaN(number)) {
             throw new Error("Por favor, introduce un número válido.");
         }
 
